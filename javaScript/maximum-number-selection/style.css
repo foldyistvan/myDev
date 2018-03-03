@@ -3,6 +3,7 @@
 .wrapper {
 	margin: auto;
 	display: inline-block;
+	max-width: 600px;
 }
 
 /* /style */
