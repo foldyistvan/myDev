@@ -5,11 +5,12 @@ var liList = '';
 
 var biggest = numbers[0];
 for(var i=0; i<numbers.length; i++) {
-    liList += '<li>'+numbers[i]+'</li>';
+    liList += '<li class="list-item list-item-'+(i + 1)+'">'+numbers[i]+'</li>';
     if(numbers[i] > biggest) {
         biggest = numbers[i];
     }
 }
+
 
 ul.innerHTML = liList;
 span.innerHTML = biggest;

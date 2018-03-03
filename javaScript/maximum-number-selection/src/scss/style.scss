@@ -1,0 +1,32 @@
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+.container {
+	font-family: 'Mina', sans-serif;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	align-items: center;
+}
+
+.wrapper {
+	margin: auto;
+	display: inline-block;
+	max-width: 600px;
+	background: azure;
+	font-size: 16px;
+	border: 1px solid #eee;
+	padding: 20px 40px;
+	border-radius: 20px;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+span {
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+}
