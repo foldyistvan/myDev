@@ -1,15 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="hu">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="web/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Mina:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     </head>
     <body>
     <div class="container">
         <div class="wrapper">
-            <h1>Maximum Elem Kiválasztása</h1>
-            <ul class="list"></ul>
-            <p class="result-text">A legnagyobb elem: <span class="result"></span></p>
+            <div class="col-8 wrapper-left">
+                <h1><i class="fas fa-calculator"></i> Maximum Elem Kiválasztása</h1>
+                <ul class="list"></ul>
+                <div class="result-text">
+                    <p class="result-text-inner">A legnagyobb elem: <span class="result">nincs elem</span></p>
+                </div>
+                <div class="svg-wrapper">
+                    <svg aria-hidden="true" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" class="svg-inline--fa fa-caret-right fa-w-6 fa-3x"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z" class=""></path></svg>
+                </div>
+            </div>
+            <div class="col-4 wrapper-right">
+                <form onsubmit="return refresh()" class="action">
+                    <input type="number" id="candidate"/>
+                    <button class="btn-add" type="submit"><i class="fas fa-plus"></i>Elem Hozzáadása</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="web/js/script.js"></script>
